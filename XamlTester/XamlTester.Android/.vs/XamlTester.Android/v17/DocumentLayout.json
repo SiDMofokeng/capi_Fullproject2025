@@ -1,0 +1,97 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.Android\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.iOS\\Main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.iOS\\Info.plist||{C6FFD277-C1E0-43E0-819A-BF6B6C171CB7}|Default"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.iOS\\Entitlements.plist||{C6FFD277-C1E0-43E0-819A-BF6B6C171CB7}|Default"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.iOS\\AppDelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.Android\\XamlTester.Android.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:XamlTester.Android.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.iOS\\Main.cs",
+              "RelativeDocumentMoniker": "..\\XamlTester.iOS\\Main.cs",
+              "ToolTip": "C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.iOS\\Main.cs",
+              "RelativeToolTip": "..\\XamlTester.iOS\\Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T22:13:44.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Info.plist",
+              "DocumentMoniker": "C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.iOS\\Info.plist",
+              "RelativeDocumentMoniker": "..\\XamlTester.iOS\\Info.plist",
+              "ToolTip": "C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.iOS\\Info.plist",
+              "RelativeToolTip": "..\\XamlTester.iOS\\Info.plist",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-09T22:13:44.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Entitlements.plist",
+              "DocumentMoniker": "C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.iOS\\Entitlements.plist",
+              "RelativeDocumentMoniker": "..\\XamlTester.iOS\\Entitlements.plist",
+              "ToolTip": "C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.iOS\\Entitlements.plist",
+              "RelativeToolTip": "..\\XamlTester.iOS\\Entitlements.plist",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-09T22:13:43.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDelegate.cs",
+              "DocumentMoniker": "C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.iOS\\AppDelegate.cs",
+              "RelativeDocumentMoniker": "..\\XamlTester.iOS\\AppDelegate.cs",
+              "ToolTip": "C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.iOS\\AppDelegate.cs",
+              "RelativeToolTip": "..\\XamlTester.iOS\\AppDelegate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T22:13:43.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "XamlTester.Android.csproj.user",
+              "DocumentMoniker": "C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.Android\\XamlTester.Android.csproj.user",
+              "RelativeDocumentMoniker": "XamlTester.Android.csproj.user",
+              "ToolTip": "C:\\Users\\sydke\\Documents\\Visual Studio 2022\\XamlTester\\XamlTester\\XamlTester.Android\\XamlTester.Android.csproj.user",
+              "RelativeToolTip": "XamlTester.Android.csproj.user",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2025-03-09T22:13:43.774Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

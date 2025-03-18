@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlTester.QuestionnairePage"
+             BackgroundColor="#fff">
+
+    <StackLayout Padding="0" Spacing="0">
+
+        <!-- Top Bar with Logo (Left) and User Account Icon (Right) -->
+        <Grid BackgroundColor="#fff" Padding="10" ColumnDefinitions="Auto, *" VerticalOptions="Center" HeightRequest="80">
+
+            <!-- Logo (Top Left Corner) -->
+            <Image Source="logo.png" WidthRequest="100" HeightRequest="150" VerticalOptions="Center" HorizontalOptions="Start" />
+
+            <!-- User Account Icon (Top Right Corner) -->
+            <Image Source="user_icon.png" WidthRequest="50" HeightRequest="50"
+           VerticalOptions="Center" HorizontalOptions="End" Grid.Column="1"/>
+
+        </Grid>
+
+
+        <!-- Search Bar with Burger Menu -->
+        <Grid BackgroundColor="#000" Padding="10" ColumnDefinitions="Auto, *">
+
+            <!-- Burger Menu Icon (Opens Flyout Menu) -->
+            <Image Source="menu_icon.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Start" />
+
+            <!-- Search Bar -->
+            <SearchBar Placeholder="Search" x:Name="searchBar" BackgroundColor="White" Grid.Column="1" />
+        </Grid>
+        
+
+        <!-- Homepage Title -->
+        <Label Text="HOMEPAGE" FontSize="18" FontAttributes="Bold" TextColor="#000" Padding="10" />
+
+        <!-- Welcome Message -->
+        <Label x:Name="welcomeLabel" Text="Welcome Carl" FontSize="24" FontAttributes="Bold" TextColor="Black" Padding="5,5,5,0" />
+
+        <!-- Section Header -->
+        <Label Text="Questionnaires" FontSize="18" FontAttributes="Bold" TextColor="#000" Padding="5,0,5,5" />
+
+        <!-- Questionnaire List -->
+        <!-- Questionnaire Card -->
+        <Frame BackgroundColor="White" Padding="15" CornerRadius="12" HasShadow="True" Margin="10">
+            <StackLayout Spacing="10">
+
+                <!-- Card Title -->
+                <Label Text="Questionnaire Categories" FontSize="18" FontAttributes="Bold" TextColor="Black" />
+
+                <!-- Education Background with Checkbox -->
+                <Frame BackgroundColor="White" Padding="10" CornerRadius="8" HasShadow="True">
+                    <Grid ColumnDefinitions="Auto, *" VerticalOptions="Center">
+
+                        <!-- Selection Input (Checkbox) -->
+                        <CheckBox VerticalOptions="Center" />
+
+                        <!-- Education Background Label -->
+                        <Label Text="Education Background" FontSize="16" TextColor="Black" VerticalOptions="Center" Grid.Column="1" />
+
+                    </Grid>
+                </Frame>
+
+                <Frame BackgroundColor="White" Padding="10" CornerRadius="8" HasShadow="True">
+                    <Grid ColumnDefinitions="Auto, *" VerticalOptions="Center">
+
+                        <!-- Selection Input (Checkbox or Switch) -->
+                        <CheckBox VerticalOptions="Center" />
+
+                        <!-- Employment Label -->
+                        <Label Text="Employment" FontSize="16" TextColor="Black" VerticalOptions="Center" Grid.Column="1" />
+
+                    </Grid>
+                </Frame>
+
+            </StackLayout>
+        </Frame>
+
+    </StackLayout>
+</ContentPage>

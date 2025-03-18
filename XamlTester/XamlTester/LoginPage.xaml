@@ -1,0 +1,61 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlTester.LoginPage"
+             BackgroundColor="#fff">
+
+    <Grid Padding="20" RowSpacing="2" VerticalOptions="FillAndExpand">
+
+        <!-- Logo -->
+        <Image Source="logo.png" WidthRequest="300" HeightRequest="300"
+               HorizontalOptions="Center" Grid.Row="0"/>
+
+        <!-- Login Heading -->
+        <Label Text="Stats SA Questionnaire Designer"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"
+               Grid.Row="1"/>
+
+        <!-- Debug Label -->
+        <Label Text="Sign into your account"
+               FontSize="14"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               Grid.Row="2" />
+
+        <!-- CAPI Dropdown -->
+        <Frame BackgroundColor="#EAEDF2" CornerRadius="10" Padding="10, 5" Margin="0,5,0,5" HeightRequest="30" Grid.Row="3">
+            <Picker Title="Select Option" BackgroundColor="Transparent">
+                <Picker.Items>
+                    <x:String>CAPI</x:String>
+                </Picker.Items>
+            </Picker>
+        </Frame>
+
+        <!-- Username Field -->
+        <Frame BackgroundColor="#EAEDF2" CornerRadius="10" Padding="10, 5" Margin="0,5,0,5" HeightRequest="30" Grid.Row="4">
+            <Entry x:Name="usernameEntry" BackgroundColor="Transparent" Placeholder="Username" TextColor="Black"/>
+        </Frame>
+
+        <!-- Password Field (Rounded) -->
+        <Frame BackgroundColor="#EAEDF2" CornerRadius="10" Padding="10, 5" Margin="0,5,0,5" HeightRequest="30" Grid.Row="5">
+            <Entry x:Name="passwordEntry" BackgroundColor="Transparent" Placeholder="Password" IsPassword="True" TextColor="Black"/>
+        </Frame>
+
+        <!-- Login Button -->
+        <Button Text="Login" BackgroundColor="#315CA3" TextColor="White" HeightRequest="20" Grid.Row="6"/>
+
+        <!-- Footer Section (Fixed at Bottom) -->
+        <StackLayout BackgroundColor="Black" Padding="5"
+                     VerticalOptions="End" Grid.Row="7">
+            <Label Text="© 2025 Stats SA. All rights reserved."
+                   FontSize="12" TextColor="White"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"/>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

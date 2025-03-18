@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlTester.HouseholdQuestionnairepAGE_Two_Accordion"
+             BackgroundColor="#fff">
+
+    <ScrollView>
+        <StackLayout Padding="0" Spacing="0">
+
+            <!-- Top Bar with Logo (Left) and User Account Icon (Right) -->
+            <Grid BackgroundColor="#fff" Padding="10" ColumnDefinitions="Auto, *" VerticalOptions="Center" HeightRequest="80">
+
+                <!-- Logo (Top Left Corner) -->
+                <Image Source="logo.png" WidthRequest="100" HeightRequest="150" VerticalOptions="Center" HorizontalOptions="Start" />
+
+                <!-- User Account Icon (Top Right Corner) -->
+                <Image Source="user_icon.png" WidthRequest="50" HeightRequest="50"
+                   VerticalOptions="Center" HorizontalOptions="End" Grid.Column="1"/>
+
+            </Grid>
+
+            <!-- Search Bar with Burger Menu -->
+            <Grid BackgroundColor="#000" Padding="10" ColumnDefinitions="Auto, *">
+
+                <!-- Burger Menu Icon (Opens Flyout Menu) -->
+                <Image Source="menu_icon.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Start" />
+
+                <!-- Search Bar -->
+                <SearchBar Placeholder="Search" x:Name="searchBar" BackgroundColor="White" Grid.Column="1" />
+            </Grid>
+
+            <!-- Page Title -->
+            <StackLayout Orientation="Horizontal" Padding="10">
+                <Label Text="HOMEPAGE" FontSize="8" TextColor="Blue"/>
+                <Label Text=" > " FontSize="8" TextColor="Black"/>
+                <Label Text="MY WORK" FontSize="8" TextColor="Blue"/>
+                <Label Text=" > " FontSize="8" TextColor="Black"/>
+                <Label Text="DWELLING UNITS" FontSize="8" TextColor="Black"/>
+            </StackLayout>
+
+
+            <!-- Section Header -->
+            <Label Text="Household Questionnaire Mphogola" FontSize="22" FontAttributes="Bold" TextColor="#000" Padding="5,0,5,5" />
+
+            <!-- START INTERVIEW -->
+            <Button Text="START INTERVIEW" BackgroundColor="#CAD6EA" TextColor="White" HeightRequest="45" Grid.Row="6"/>
+
+            <!-- COVER PAGE -->
+            <StackLayout>
+                <!-- COVER PAGE Button (Toggles Visibility) -->
+                <Button Text="COVER PAGE" BackgroundColor="#344562" TextColor="White" HeightRequest="45" Clicked="OnCoverPageClicked"/>
+
+                <!-- Content Section to Toggle -->
+                <Frame x:Name="coverPageContent"
+       IsVisible="False"
+       Padding="10"
+       Margin="10"
+       CornerRadius="10"
+       BorderColor="Black"
+       HasShadow="True">
+
+                    <StackLayout Spacing="10">
+
+                        <!-- Household Member Information -->
+                        <Label Text="Household Member Information" FontSize="16" TextColor="Black"/>
+                        <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+                        <!-- Demographics -->
+                        <Label Text="Demographics" FontSize="16" TextColor="Black"/>
+                        <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+                        <!-- Migration -->
+                        <Label Text="Migration" FontSize="16" TextColor="Black"/>
+                        <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+                        <!-- General Health and Functioning -->
+                        <Label Text="General Health and Functioning" FontSize="16" TextColor="Black"/>
+                        <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+                        <!-- Parental Survival -->
+                        <Label Text="Parental Survival" FontSize="16" TextColor="Black"/>
+                        <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+                        <!-- Education -->
+                        <Label Text="Education" FontSize="16" TextColor="Black"/>
+                        <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+                        <!-- Income -->
+                        <Label Text="Income" FontSize="16" TextColor="Black"/>
+                        <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+                        <!-- Employment -->
+                        <Label Text="Employment" FontSize="16" TextColor="Black"/>
+                        <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+                        <!-- Fertility -->
+                        <Label Text="Fertility" FontSize="16" TextColor="Black"/>
+                        <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+                        <!-- Housing, Household Goods and Services -->
+                        <Label Text="Housing, Household Goods and Services" FontSize="16" TextColor="Black"/>
+                        <BoxView HeightRequest="1" BackgroundColor="Gray"/>
+
+                        <!-- Agricultural Activities and Food Security -->
+                        <Label Text="Agricultural Activities and Food Security" FontSize="16" TextColor="Black"/>
+
+                    </StackLayout>
+                    <!-- ✅ Closing tag for StackLayout fixed here -->
+
+                </Frame>
+                <!-- ✅ Closing tag for Frame fixed here -->
+
+
+            </StackLayout>
+
+            <!-- END INTERVIEW -->
+            <Button Text="END INTERVIEW" BackgroundColor="#315CA3" TextColor="White" HeightRequest="45" Grid.Row="6"/>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

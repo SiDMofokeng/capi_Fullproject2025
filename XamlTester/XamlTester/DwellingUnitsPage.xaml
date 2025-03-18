@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlTester.DwellingUnitsPage"
+             BackgroundColor="#fff">
+
+    <StackLayout Padding="0" Spacing="0">
+
+        <!-- Top Bar with Logo (Left) and User Account Icon (Right) -->
+        <Grid BackgroundColor="#fff" Padding="10" ColumnDefinitions="Auto, *" VerticalOptions="Center" HeightRequest="80">
+
+            <!-- Logo (Top Left Corner) -->
+            <Image Source="logo.png" WidthRequest="100" HeightRequest="150" VerticalOptions="Center" HorizontalOptions="Start" />
+
+            <!-- User Account Icon (Top Right Corner) -->
+            <Image Source="user_icon.png" WidthRequest="50" HeightRequest="50"
+                   VerticalOptions="Center" HorizontalOptions="End" Grid.Column="1"/>
+
+        </Grid>
+
+        <!-- Search Bar with Burger Menu -->
+        <Grid BackgroundColor="#000" Padding="10" ColumnDefinitions="Auto, *">
+
+            <!-- Burger Menu Icon (Opens Flyout Menu) -->
+            <Image Source="menu_icon.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Start" />
+
+            <!-- Search Bar -->
+            <SearchBar Placeholder="Search" x:Name="searchBar" BackgroundColor="White" Grid.Column="1" />
+        </Grid>
+
+        <!-- Page Title -->
+        <StackLayout Orientation="Horizontal" Padding="10">
+            <Label Text="HOMEPAGE" FontSize="10" TextColor="Blue"/>
+            <Label Text=" > " FontSize="10" TextColor="Black"/>
+            <Label Text="MY WORK" FontSize="10" TextColor="Blue"/>
+            <Label Text=" > " FontSize="10" TextColor="Black"/>
+            <Label Text="DWELLING UNITS" FontSize="10" TextColor="Black"/>
+        </StackLayout>
+
+        <!-- Section Header -->
+        <Grid Padding="10, 5" ColumnDefinitions="Auto, *">
+
+            <!-- Burger Menu Icon (Opens Flyout Menu) -->
+            <Image Source="back.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Start" />
+
+            <!-- Search Bar -->
+            <Label Text="Dwelling Unit - Mphogola" FontSize="24" FontAttributes="Bold" TextColor="#000" Grid.Column="1" Padding="2,0,2,2" />
+        </Grid>
+        
+                
+        <Label Text="MRN ID" FontSize="16" FontAttributes="Bold" TextColor="Black" Margin="10,15,10,0"/>
+
+        <Frame BackgroundColor="#EAEDF2" CornerRadius="10" Padding="2" Margin="10,10,10,10" HasShadow="True">
+            <Entry BackgroundColor="#EAEDF2" FontSize="14" Placeholder="CAPI" TextColor="Black"/>
+        </Frame>
+
+        
+        <Label Text="STRUCTURE COUNT" FontSize="16" FontAttributes="Bold" TextColor="Black" Margin="10,15,10,15"/>
+
+        <Frame BackgroundColor="#EAEDF2" CornerRadius="10" Padding="2" Margin="10,0,10,10" HasShadow="True">
+            <Entry BackgroundColor="#EAEDF2" FontSize="14" Placeholder="CAPI" TextColor="Black"/>
+        </Frame>
+
+        <Frame BackgroundColor="White" Padding="15" CornerRadius="12" HasShadow="True" Margin="10">
+            <StackLayout Spacing="10">
+
+                <!-- House with Checkbox -->
+                <Frame BackgroundColor="#315CA3" Padding="5, 5" CornerRadius="8" HasShadow="False">
+                    <Grid ColumnDefinitions="Auto, *" VerticalOptions="Center">
+
+                        <!-- Selection Input (Checkbox) -->
+                        <Label Text="Structure Number" FontSize="16" TextColor="White" VerticalOptions="Center"/>
+
+                        <!-- House Label -->
+                        <Label Text="Feature Category" FontSize="16" TextColor="White" VerticalOptions="Center" Grid.Column="1" HorizontalOptions="End" />
+
+                    </Grid>
+                </Frame>
+
+                <!-- House with Checkbox -->
+                <Frame BackgroundColor="White" Padding="10" CornerRadius="8" HasShadow="False">
+                    <Grid ColumnDefinitions="Auto, *" VerticalOptions="Center">
+
+                        <!-- Selection Input (Checkbox) -->
+                        <Label Text="1" FontSize="16" TextColor="Black" VerticalOptions="Center"/>
+
+                        <!-- House Label -->
+                        <Label Text="House" FontSize="16" TextColor="Black" VerticalOptions="Center" Grid.Column="1" HorizontalOptions="End" />
+
+                    </Grid>
+                </Frame>
+
+                <!-- Apartment with Checkbox -->
+                <Frame BackgroundColor="White" Padding="10" CornerRadius="8" HasShadow="False">
+                    <Grid ColumnDefinitions="Auto, *" VerticalOptions="Center">
+
+                        <!-- Selection Input (Checkbox) -->
+                        <Label Text="2" FontSize="16" TextColor="Black" VerticalOptions="Center"/>
+
+                        <!-- Apartment Label -->
+                        <Label Text="Apartment" FontSize="16" TextColor="Black" VerticalOptions="Center" Grid.Column="1" HorizontalOptions="End" />
+
+                    </Grid>
+                </Frame>
+
+            </StackLayout>
+        </Frame>
+
+    </StackLayout>
+</ContentPage>

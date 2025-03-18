@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlTester.MyWorkDashboardContent"
+             Title="My Work">
+
+    <StackLayout Padding="20" Spacing="10">
+
+        <!-- Page Title -->
+        <Label Text="My Work" FontSize="28" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+        <!-- Search Bar -->
+        <SearchBar Placeholder="Search by province or district..." 
+           x:Name="SearchBar" 
+           TextChanged="OnSearchTextChanged"/>
+
+
+        <!-- Data Table -->
+        <ListView x:Name="WorkListView" HasUnevenRows="True" SeparatorVisibility="Default"
+          ItemSelected="OnWorkItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Padding="10" CornerRadius="10" Margin="5" BackgroundColor="#EAEDF2">
+                            <StackLayout>
+                                <Label Text="{Binding Province}" FontSize="18" FontAttributes="Bold" TextColor="#315CA3"/>
+                                <Label Text="{Binding District}" FontSize="16" TextColor="Black"/>
+                                <Label Text="{Binding MapReference}" FontSize="14" TextColor="Gray"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="EA Number: " FontAttributes="Bold"/>
+                                    <Label Text="{Binding EANumber}" TextColor="Blue"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="DU Count: " FontAttributes="Bold"/>
+                                    <Label Text="{Binding DUCount}" TextColor="Black"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+    </StackLayout>
+
+</ContentPage>

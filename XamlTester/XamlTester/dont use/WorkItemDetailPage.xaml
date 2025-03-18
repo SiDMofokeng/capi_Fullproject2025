@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlTester.WorkItemDetailPage"
+             Title="Dwelling Units">
+
+    <StackLayout Padding="20" Spacing="15">
+
+        <!-- Back Button -->
+        <Button Text="← Back" Clicked="OnBackClicked" BackgroundColor="Transparent" TextColor="#315CA3" FontSize="18"/>
+
+        <!-- Title -->
+        <Label Text="Dwelling Units - Mphogola" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+        <!-- MRN ID & Structure Count -->
+        <StackLayout Padding="10">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="MRN ID: " FontAttributes="Bold"/>
+                <Label Text="{Binding SelectedWorkItem.MapReference}" FontSize="18" TextColor="Black"/>
+                <Button Text="Update" BackgroundColor="#315ba3" TextColor="White" Clicked="OnUpdateClicked"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Structure Count: " FontAttributes="Bold"/>
+                <Label Text="{Binding StructureCount}" FontSize="18" TextColor="Black"/>
+            </StackLayout>
+        </StackLayout>
+
+        <!-- Dwelling Units Table -->
+        <ListView x:Name="DwellingUnitsListView" HasUnevenRows="True" SeparatorVisibility="Default">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame Padding="10" CornerRadius="10" Margin="5" BackgroundColor="#EAEDF2">
+                            <StackLayout>
+                                <Label Text="Structure Number: {Binding StructureNumber}" FontSize="16" FontAttributes="Bold" TextColor="#315CA3"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Feature Category: " FontAttributes="Bold"/>
+                                    <Label Text="{Binding FeatureCategory}" TextColor="Black"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Features: " FontAttributes="Bold"/>
+                                    <Label Text="{Binding Features}" TextColor="Black"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Description: " FontAttributes="Bold"/>
+                                    <Label Text="{Binding Description}" TextColor="Black"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Unpacked: " FontAttributes="Bold"/>
+                                    <Label Text="{Binding Unpacked}" TextColor="Black"/>
+                                </StackLayout>
+
+                                <!-- Action Buttons -->
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                    <Button Text="Edit" BackgroundColor="#FFA500" TextColor="White" Clicked="OnEditClicked"/>
+                                    <Button Text="Continue" BackgroundColor="#008000" TextColor="White" Clicked="OnContinueClicked"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+
+</ContentPage>

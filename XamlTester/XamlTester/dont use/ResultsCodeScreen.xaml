@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlTester.ResultsCodeScreen"
+             Title="Results Code Screen">
+
+    <StackLayout Padding="10">
+
+        <!-- Back Button -->
+        <Button Text="← Back to My Work" Clicked="OnBackClicked"
+                BackgroundColor="Transparent" TextColor="#315CA3" FontSize="18"/>
+
+        <!-- Title -->
+        <Label Text="Results Code Screen" FontSize="24"
+               FontAttributes="Bold" HorizontalOptions="Center"/>
+
+        <!-- Form Fields -->
+        <StackLayout Padding="10" Spacing="15">
+            <Picker Title="Results Code">
+                <Picker.Items>
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Entry Placeholder="Comments" />
+
+            <DatePicker Format="D" />
+
+            <TimePicker />
+
+            <Picker Title="Final Results Code">
+                <Picker.Items>
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Entry Placeholder="Enumeration Reference No." />
+
+        </StackLayout>
+
+        <!-- Action Buttons -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+            <Button Text="Validate" BackgroundColor="#344462" TextColor="White"/>
+            <Button Text="Search" BackgroundColor="#8091ae" TextColor="White"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20" Margin="10">
+            <Button Text="Cancel" BackgroundColor="#628acd" TextColor="White"/>
+            <Button Text="Save" BackgroundColor="#315ba3" TextColor="White"/>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

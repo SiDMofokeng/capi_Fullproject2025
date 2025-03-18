@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlTester.HouseholdQuestionnaire"
+             Title="Household Questionnaire">
+
+    <StackLayout Padding="10">
+
+        <!-- Back Button -->
+        <Button Text="← Back to My Work" Clicked="OnBackClicked"
+                BackgroundColor="Transparent" TextColor="#315CA3" FontSize="18"/>
+
+        <!-- Title -->
+        <Label Text="Household Questionnaire" FontSize="24"
+               FontAttributes="Bold" HorizontalOptions="Center"/>
+
+        <!-- Tab Navigation -->
+        <ScrollView Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="5">
+                <Button Text="Household Info" Clicked="OnTabClicked" CommandParameter="HouseholdInfo"
+                        WidthRequest="120" FontSize="14"/>
+                <Button Text="Member Info" Clicked="OnTabClicked" CommandParameter="MemberInfo"
+                        WidthRequest="120" FontSize="14"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Household Information Section -->
+        <StackLayout x:Name="HouseholdInfoContent">
+            <Label Text="Household Details" FontSize="18" HorizontalOptions="Center"/>
+            <Entry Placeholder="Map Reference ID" />
+            <Entry Placeholder="Dwelling Number" />
+            <Entry Placeholder="Household Number" />
+            <Entry Placeholder="Province" />
+            <Entry Placeholder="District" />
+            <Entry Placeholder="Main Place" />
+            <Entry Placeholder="Sub Place" />
+            <Entry Placeholder="Total Persons" Keyboard="Numeric"/>
+            <Entry Placeholder="Total Male" Keyboard="Numeric"/>
+            <Entry Placeholder="Total Female" Keyboard="Numeric"/>
+        </StackLayout>
+
+        <!-- Household Member Information (Initially Hidden) -->
+        <StackLayout x:Name="MemberInfoContent" IsVisible="False">
+            <Label Text="Household Member Information" FontSize="18" HorizontalOptions="Center"/>
+            <Entry Placeholder="First Name" />
+            <Entry Placeholder="Surname" />
+            <Picker Title="Gender">
+                <Picker.Items>
+                    <x:String>Male</x:String>
+                    <x:String>Female</x:String>
+                </Picker.Items>
+            </Picker>
+            <Entry Placeholder="Date of Birth (YYYY-MM-DD)" />
+            <Entry Placeholder="Occupation" />
+            <Entry Placeholder="Relation to Head of Household" />
+        </StackLayout>
+
+        <!-- Action Buttons -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+            <Button Text="Save" BackgroundColor="#315ba3" TextColor="White" Clicked="OnSaveClicked"/>
+            <Button Text="Start Interview" BackgroundColor="#04AA6D" TextColor="White" Clicked="OnStartInterviewClicked"/>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

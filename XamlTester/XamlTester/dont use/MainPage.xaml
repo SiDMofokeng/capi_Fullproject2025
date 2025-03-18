@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:XamlTester"
+            x:Class="XamlTester.MainPage">
+
+    <!-- Sidebar Menu -->
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Menu" BackgroundColor="#315CA3">
+            <StackLayout Padding="20">
+
+                <!-- Logo -->
+                <Image Source="logo-transparent-bg.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center"/>
+
+                <!-- Navigation Buttons -->
+                <Button Text="Home" TextColor="White" BackgroundColor="Transparent" Clicked="GoToHome"/>
+                <Button Text="My Work" TextColor="White" BackgroundColor="Transparent" Clicked="GoToMyWork"/>
+                <Button Text="Dashboard" TextColor="White" BackgroundColor="Transparent" Clicked="GoToDashboard"/>
+                <Button Text="Sign Out" TextColor="Red" BackgroundColor="Transparent" Clicked="OnSignOut"/>
+
+            </StackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+
+    <!-- Main Page Content -->
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <local:HomePage />
+                <!-- This is now recognized! -->
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+
+</FlyoutPage>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlTester.FieldWorkersPortal"
+             Title="Field Workers Portal">
+
+    <StackLayout Padding="10">
+
+        <!-- Back Button -->
+        <Button Text="← Back to My Work" Clicked="OnBackClicked"
+                BackgroundColor="Transparent" TextColor="#315CA3" FontSize="18"/>
+
+        <!-- Title -->
+        <Label Text="Field Workers Portal - Mphogola" FontSize="24"
+               FontAttributes="Bold" HorizontalOptions="Center"/>
+
+        <!-- Tabs Section (Adjusted for Fit) -->
+        <ScrollView Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="5">
+                <Button Text="Interviews" Clicked="OnTabClicked" CommandParameter="Interviews"
+                        WidthRequest="100" FontSize="14"/>
+                <Button Text="Dashboard" Clicked="OnTabClicked" CommandParameter="Dashboard"
+                        WidthRequest="100" FontSize="14"/>
+                <Button Text="Returns" Clicked="OnTabClicked" CommandParameter="Returns"
+                        WidthRequest="100" FontSize="14"/>
+                <Button Text="Sign-off" Clicked="OnTabClicked" CommandParameter="MyWorkSignOff"
+                        WidthRequest="100" FontSize="14"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Tab Content -->
+        <StackLayout x:Name="InterviewsContent">
+            <Label Text="Interviews Data" FontSize="18" HorizontalOptions="Center"/>
+            <Button Text="Update" BackgroundColor="#315ba3" TextColor="White"
+                    Clicked="OnUpdateClicked"/>
+        </StackLayout>
+
+        <StackLayout x:Name="DashboardContent" IsVisible="False">
+            <Label Text="Dashboard Info" FontSize="18" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout x:Name="ReturnsContent" IsVisible="False">
+            <Label Text="Returns Info" FontSize="18" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout x:Name="MyWorkSignOffContent" IsVisible="False">
+            <Label Text="My Work Sign-Off Info" FontSize="18" HorizontalOptions="Center"/>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

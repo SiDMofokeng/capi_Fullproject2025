@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlTester", "XamlTester\XamlTester\XamlTester.csproj", "{DA5BB376-B590-8BAC-5BD9-4F8884C7F8EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlTester.Android", "XamlTester\XamlTester.Android\XamlTester.Android.csproj", "{BE6AE334-07CF-41E3-A9F2-BA4741E84EF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlTester.iOS", "XamlTester\XamlTester.iOS\XamlTester.iOS.csproj", "{5EC1A6C3-03BA-4CCF-8D43-B4703C395598}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA5BB376-B590-8BAC-5BD9-4F8884C7F8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA5BB376-B590-8BAC-5BD9-4F8884C7F8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA5BB376-B590-8BAC-5BD9-4F8884C7F8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA5BB376-B590-8BAC-5BD9-4F8884C7F8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE6AE334-07CF-41E3-A9F2-BA4741E84EF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE6AE334-07CF-41E3-A9F2-BA4741E84EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE6AE334-07CF-41E3-A9F2-BA4741E84EF8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BE6AE334-07CF-41E3-A9F2-BA4741E84EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE6AE334-07CF-41E3-A9F2-BA4741E84EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE6AE334-07CF-41E3-A9F2-BA4741E84EF8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5EC1A6C3-03BA-4CCF-8D43-B4703C395598}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{5EC1A6C3-03BA-4CCF-8D43-B4703C395598}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{5EC1A6C3-03BA-4CCF-8D43-B4703C395598}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{5EC1A6C3-03BA-4CCF-8D43-B4703C395598}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B8067FA-95DF-4D9D-96E4-FFBE3C568E83}
+	EndGlobalSection
+EndGlobal

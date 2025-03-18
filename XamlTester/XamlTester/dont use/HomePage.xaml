@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlTester.HomePage"
+             Title="Home">
+
+    <StackLayout Padding="30" Spacing="10" VerticalOptions="Center">
+
+        <!-- Logo -->
+        <Image Source="logo.png" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center"/>
+
+        <!-- Login Heading -->
+        <Label Text="Log In" FontSize="32" FontAttributes="Bold" HorizontalOptions="Center"/>
+        <Label Text="Debug: 3 Interviews" FontSize="16" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+        <!-- Card Container -->
+        <StackLayout Padding="10" Spacing="15">
+
+            <!-- My Work -->
+            <Frame BackgroundColor="#EAEDF2" Padding="20" CornerRadius="10" HasShadow="True">
+                
+                <StackLayout HorizontalOptions="Center">
+                    <Image Source="work.png" WidthRequest="60" HeightRequest="60" HorizontalOptions="Center"/>
+                    <Label Text="My Work" FontSize="16" FontAttributes="Bold" TextColor="#315CA3" HorizontalOptions="Center"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnMyWorkTapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <!-- Dashboard -->
+            <Frame BackgroundColor="#EAEDF2" Padding="20" CornerRadius="10" HasShadow="True">
+                <StackLayout HorizontalOptions="Center">
+                    <Image Source="bar.png" WidthRequest="60" HeightRequest="60" HorizontalOptions="Center"/>
+                    <Label Text="Dashboard" FontSize="16" FontAttributes="Bold" TextColor="#315CA3" HorizontalOptions="Center"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnDashboardTapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <!-- My Work Sign-Off -->
+            <Frame BackgroundColor="#EAEDF2" Padding="20" CornerRadius="10" HasShadow="True">
+                <StackLayout HorizontalOptions="Center">
+                    <Image Source="event.png" WidthRequest="60" HeightRequest="60" HorizontalOptions="Center"/>
+                    <Label Text="My Work Sign-Off" FontSize="16" FontAttributes="Bold" TextColor="#315CA3" HorizontalOptions="Center"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnWorkSignOffTapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,46 @@
+﻿<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:XamlTester"
+            x:Class="XamlTester.MyWorkDashboard">
+
+    <!-- Sidebar Menu -->
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Menu" BackgroundColor="#315CA3">
+            <StackLayout Padding="20" VerticalOptions="FillAndExpand">
+
+                <!-- Field Workers Portal Button (Now at the Top) -->
+                <Button Text="Field Workers Portal" BackgroundColor="White" TextColor="#315CA3" FontAttributes="Bold" Clicked="GoToFieldWorkersPortal"/>
+
+                <!-- Household Questionnaire Button (Below Field Workers Portal) -->
+                <Button Text="Household Questionnaire" BackgroundColor="White" TextColor="#315CA3" FontAttributes="Bold" Clicked="GoToHouseholdQuestionnaire"/>
+
+                <!-- Results Code Screen Button -->
+                <Button Text="Results Code Screen" BackgroundColor="White" TextColor="#315CA3" FontAttributes="Bold" Clicked="GoToResultsCodeScreen"/>
+
+                <!-- Logo -->
+                <Image Source="logo-transparent-bg.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Center" Margin="10"/>
+
+                <!-- Empty Space (Pushes other buttons down) -->
+                <StackLayout VerticalOptions="FillAndExpand"></StackLayout>
+
+                <!-- Menu Items (Aligned to Bottom) -->
+                <StackLayout VerticalOptions="EndAndExpand" Spacing="15">
+                    <Button Text="Help" TextColor="White" BackgroundColor="Transparent" Clicked="GoToHelp"/>
+                    <Button Text="Settings" TextColor="White" BackgroundColor="Transparent" Clicked="GoToSettings"/>
+                    <Button Text="Logout" TextColor="Red" BackgroundColor="Transparent" Clicked="OnLogout"/>
+                </StackLayout>
+
+            </StackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+
+    <!-- Main Page Content -->
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <local:MyWorkDashboardContent />
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+
+</FlyoutPage>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamlTester.HouseholdQuestionnairepAGE_Two"
+             BackgroundColor="#fff">
+
+    <ScrollView>
+        <StackLayout Padding="0" Spacing="0">
+
+            <!-- Top Bar with Logo (Left) and User Account Icon (Right) -->
+            <Grid BackgroundColor="#fff" Padding="10" ColumnDefinitions="Auto, *" VerticalOptions="Center" HeightRequest="80">
+
+                <!-- Logo (Top Left Corner) -->
+                <Image Source="logo.png" WidthRequest="100" HeightRequest="150" VerticalOptions="Center" HorizontalOptions="Start" />
+
+                <!-- User Account Icon (Top Right Corner) -->
+                <Image Source="user_icon.png" WidthRequest="50" HeightRequest="50"
+                   VerticalOptions="Center" HorizontalOptions="End" Grid.Column="1"/>
+
+            </Grid>
+
+            <!-- Search Bar with Burger Menu -->
+            <Grid BackgroundColor="#000" Padding="10" ColumnDefinitions="Auto, *">
+
+                <!-- Burger Menu Icon (Opens Flyout Menu) -->
+                <Image Source="menu_icon.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Start" />
+
+                <!-- Search Bar -->
+                <SearchBar Placeholder="Search" x:Name="searchBar" BackgroundColor="White" Grid.Column="1" />
+            </Grid>
+
+            <!-- Page Title -->
+            <StackLayout Orientation="Horizontal" Padding="10">
+                <Label Text="HOMEPAGE" FontSize="10" TextColor="Blue"/>
+                <Label Text=" > " FontSize="10" TextColor="Black"/>
+                <Label Text="MY WORK" FontSize="10" TextColor="Blue"/>
+                <Label Text=" > " FontSize="10" TextColor="Black"/>
+                <Label Text="DWELLING UNITS" FontSize="10" TextColor="Black"/>
+            </StackLayout>
+
+            <!-- Section Header -->
+            <Grid Padding="10, 5" ColumnDefinitions="Auto, *">
+
+                <!-- Burger Menu Icon (Opens Flyout Menu) -->
+                <Image Source="back.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Start" />
+
+                <!-- Search Bar -->
+                <Label Text="Household Questionnaire Mphogola" FontSize="24" FontAttributes="Bold" TextColor="#000" Grid.Column="1" Padding="2,0,2,2" />
+            </Grid>
+
+            <!-- START INTERVIEW Button -->
+            <Button Text="START INTERVIEW" BackgroundColor="#CAD6EA" TextColor="White" HeightRequest="45" Grid.Row="6"/>
+
+            <!-- COVER PAGE Button -->
+            <Button Text="COVER PAGE" BackgroundColor="#344562" TextColor="White" HeightRequest="45" Grid.Row="6"/>
+
+            <Frame BackgroundColor="White" CornerRadius="12" Padding="15" Margin="10,10,10,10" HasShadow="True">
+                <StackLayout Spacing="10">
+
+                    <Label Text="Household Member Information" FontSize="16" TextColor="Black" />
+
+                    <!-- Paragraph (Below Top Bar) -->
+                    <Label Text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+officia deserunt mollit anim id est laborum."
+                       FontSize="16"
+                       TextColor="Black"
+                       Padding="10"
+                       LineBreakMode="WordWrap"/>
+
+                    <Button Text="ADD NEW" BackgroundColor="#628BCE" TextColor="White" HeightRequest="45" Grid.Row="6"/>
+
+                </StackLayout>
+            </Frame>
+            <Button Text="NEXT" BackgroundColor="#628BCE" TextColor="White" HeightRequest="45" Grid.Row="6"/>
+
+            <Button Text="END INTERVIEW" BackgroundColor="#315CA3" TextColor="White" HeightRequest="45" Grid.Row="6"/>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
